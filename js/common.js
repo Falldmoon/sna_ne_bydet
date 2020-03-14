@@ -6,6 +6,7 @@ $(document).ready(function () {
   	centerMode: true,
   	variableWidth: true,
   	swipe: false,
+  	focusOnSelect: true,
   	prevArrow: $('.works_slider_arow_l'),
   	nextArrow: $('.works_slider_arow_r'),
   	asNavFor: '.works-slider-main',
