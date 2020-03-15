@@ -22,6 +22,8 @@ $(document).ready(function () {
       dots: true,
       slidesToScroll: 1,
       arrows: true,
+      prevArrow: $('.team-arrows__item_l'),
+      nextArrow: $('.team-arrows__item_r'),
   })
   $(".accordeon dd").hide().prev().click(function() {
       $(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
