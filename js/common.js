@@ -36,6 +36,7 @@ $(document).ready(function () {
   $('.modal-form').on('submit', function() {
     $(modal_dark).fadeOut();
     $(modal_r).fadeOut();
+    
   })
   $('.modal-open').on('click', function() {
     let modal_select = $('.m-d-s');
