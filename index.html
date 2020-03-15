@@ -26,6 +26,77 @@
 	<!-- Marquiz script end -->
 </head>
 <body>
+<div class="preloader" id="preloader">
+	<img src="img/Logo.png" alt="">
+</div>
+<div class="dark-window"></div>
+<div class="modal-wrapper m-d-c">
+	<div class="modal-window modal-coupon">
+		<img src="img/close.png" alt="" class="modal-exit">
+		<form action="" class="modal-form">
+			<h3 class="modal-title">
+				Подожди!
+			</h3>
+			<h4 class="modal-subtitle">
+				<strong>Мы дарим тебе <span>купон на 300р.</span></strong> <br>
+				Можешь воспользоваться им, когда тебе удобно.
+			</h4>
+			<div class="modal-input__wrapper">
+				<input class="modal-input input-phone" type="text" placeholder="Номер телефона" required>
+				<span class="modal-input__text">
+					Мы закрепим купон за твоим номером. Обещаем не спамить.
+				</span>
+			</div>
+			<button class="btn modal-btn">
+				ЗАБРАТЬ КУПОН
+			</button>
+		</form>
+	</div>
+</div>
+<div class="modal-wrapper m-d-s">
+	<div class="modal-window modal-select">
+		<img src="img/close.png" alt="" class="modal-exit">
+		<form action="" class="modal-form">
+			<h3 class="modal-title">
+				Выберите способ записи
+			</h3>
+			<div class="modal-btn__wrapper">
+				<a class="btn modal-btn modal-btn__from">
+					ЗАПИСЬ ЧЕРЕЗ ФОРМУ
+					<span>Загрузка может занять несколько секунд</span>
+				</a>
+				<a class="btn modal-btn modal-btn__fast">
+					БЫСТРАЯ ЗАПИСЬ
+					<span>Оставь свой номер или WhatSap </span>
+				</a>
+			</div>
+		</form>
+	</div>
+</div>
+<div class="modal-wrapper m-d-r">
+	<div class="modal-window modal-record">
+		<img src="img/close.png" alt="" class="modal-exit">
+		<form action="" class="modal-form">
+			<h3 class="modal-title">
+				<span>Оставь номер и мы </span><br>
+				перезвоним и запишем
+			</h3>
+			<h4 class="modal-subtitle">
+				<strong>Если ты оставил <span>заявку ночью,</span></strong> <br>
+				мы перезвоним после 10:00, не переживай
+			</h4>
+			<div class="modal-input__wrapper">
+				<input class="modal-input input-phone" type="text" placeholder="Номер телефона" required>
+				<span class="modal-input__text">
+					Информация между нами. Обещаем не спамить.
+				</span>
+			</div>
+			<button class="btn modal-btn">
+				ЗАБРАТЬ КУПОН
+			</button>
+		</form>
+	</div>
+</div>
 <header class="header header-block" id="header">
 	<nav class="header-nav">
 		<div class="container">
@@ -36,13 +107,13 @@
 				<div class="col-6">
 					<ul class="nav-list">
 						<li class="list-item">
-							<a href="">Услуги</a>
+							<a href="#services" class="scroll">Услуги</a>
 						</li>
 						<li class="list-item">
-							<a href="">Отзывы</a>
+							<a href="#team" class="scroll">Отзывы</a>
 						</li>
 						<li class="list-item">
-							<a href="">Контакты</a>
+							<a href="#contacts" class="scroll">Контакты</a>
 						</li>
 					</ul>                      
 				</div>
@@ -88,13 +159,13 @@
 					</h3>
 				</div>
 			</div>
-			<a href="#" class="header-btn btn">
+			<a href="#" class="header-btn btn modal-open">
 				записаться онлайн
 			</a>
 		</div>
 	</div>
 </header>
-<section class="services">
+<section class="services" id="services">
 	<div class="container">
 		<h2 class="section-title services-title">
 			Виды стрижек
@@ -129,7 +200,7 @@
 								<a href="#">Помоем голову до и после</a>
 							</li>
 						</ul>
-						<a href="#" class="header-btn btn services-btn">
+						<a href="#" class="modal-open header-btn btn services-btn">
 							записаться онлайн
 						</a>
 					</div>
@@ -167,7 +238,7 @@
 								<a href="#">Помоем голову до и после</a>
 							</li>
 						</ul>
-						<a href="#" class="header-btn btn services-btn">
+						<a href="#" class="modal-open header-btn btn services-btn">
 							записаться онлайн
 						</a>
 					</div>
@@ -205,7 +276,7 @@
 								<a href="#">Помоем голову до и после</a>
 							</li>
 						</ul>
-						<a href="#" class="header-btn btn services-btn">
+						<a href="#" class="modal-open header-btn btn services-btn">
 							записаться онлайн
 						</a>
 					</div>
@@ -243,7 +314,7 @@
 								<a href="#">Помоем голову до и после</a>
 							</li>
 						</ul>
-						<a href="#" class="header-btn btn services-btn">
+						<a href="#" class="modal-open header-btn btn services-btn">
 							записаться онлайн
 						</a>
 					</div>
@@ -295,7 +366,7 @@
 					<span class="advantages-form__title">
 						Предпочту эту парикмахерскую!
 					</span>
-					<a href="#" class="btn services-btn">ЗАПИСАТЬСЯ ОНЛАЙН</a>
+					<a href="#" class="btn modal-open services-btn">ЗАПИСАТЬСЯ ОНЛАЙН</a>
 				</div>
 			</div>
 			<div class="advantages-block__center">
@@ -340,7 +411,7 @@
 				<span>Не понравилась стрижка</span> в другой парикмахерской? <br>
 				Перестрижём со <span>скидкой 50%</span>
 			</p>
-			<a href="#" class="header-btn btn services-btn">
+			<a href="#" class="modal-open header-btn btn services-btn">
 				записаться онлайн
 			</a>
 		</div>
@@ -465,7 +536,7 @@
 		</div>
 	</div>
 </section>
-<section class="team">
+<section class="team" id="team">
 	<div class="container">
 		<h2 class="section-title">
 			Наша команда
@@ -489,7 +560,7 @@
 						<h3 class="services-block__name">
 							Иван Иванов
 						</h3>
-						<a href="#" class="header-btn btn services-btn">
+						<a href="#" class="modal-open header-btn btn services-btn">
 							записаться онлайн
 						</a>
 					</div>
@@ -513,7 +584,7 @@
 						<h3 class="services-block__name">
 							Иван Иванов
 						</h3>
-						<a href="#" class="header-btn btn services-btn">
+						<a href="#" class="modal-open header-btn btn services-btn">
 							записаться онлайн
 						</a>
 					</div>
@@ -537,7 +608,7 @@
 						<h3 class="services-block__name">
 							Иван Иванов
 						</h3>
-						<a href="#" class="header-btn btn services-btn">
+						<a href="#" class="modal-open header-btn btn services-btn">
 							записаться онлайн
 						</a>
 					</div>
@@ -561,7 +632,7 @@
 						<h3 class="services-block__name">
 							Иван Иванов
 						</h3>
-						<a href="#" class="header-btn btn services-btn">
+						<a href="#" class="modal-open header-btn btn services-btn">
 							записаться онлайн
 						</a>
 					</div>
@@ -638,7 +709,7 @@
 		</div>
 	</div>
 </section>
-<section class="contacts">
+<section class="contacts" id="contacts">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
@@ -683,13 +754,13 @@
 		<img src="img/Logo.png" alt="">
 		<ul class="nav-list">
 			<li class="list-item">
-				<a href="">Услуги</a>
+				<a href="#services" class="scroll">Услуги</a>
 			</li>
 			<li class="list-item">
-				<a href="">Отзывы</a>
+				<a href="#team" class="scroll">Отзывы</a>
 			</li>
 			<li class="list-item">
-				<a href="">Контакты</a>
+				<a href="#contacts" class="scroll">Контакты</a>
 			</li>
 		</ul> 
 	</div>
