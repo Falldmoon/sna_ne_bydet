@@ -25,24 +25,72 @@ $(document).ready(function () {
   	slidesToScroll: 1,
   	asNavFor: '.works-navslider',
   })
-  $(".services-row").slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    centerMode: true,
-    variableWidth: true,
-    dots: true,
-    swipe: false,
-    prevArrow: $('.team-arrows__item_l_t'),
-    nextArrow: $('.team-arrows__item_r_t'),
-  });
-  $('.team-slider').slick({
-      slidesToShow: 1,
-      dots: true,
+  
+  if ($(window).width() < 1200) {
+    $(".services-row").slick({
+      slidesToShow: 3,
       slidesToScroll: 1,
-      arrows: true,
-      prevArrow: $('.team-arrows__item_l'),
-      nextArrow: $('.team-arrows__item_r'),
-  })
+      centerMode: true,
+      variableWidth: true,
+      dots: true,
+      swipe: false,
+      prevArrow: $('.team-arrows__item_l_t'),
+      nextArrow: $('.team-arrows__item_r_t'),
+    });
+  }
+  else{
+    $('.services-row').slick('unslick');
+  }
+
+  
+  $(window).on('resize', function() {
+      if ($(window).width() < 1200) {
+        $(".services-row").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          centerMode: true,
+          variableWidth: true,
+          dots: true,
+          swipe: false,
+          prevArrow: $('.team-arrows__item_l_t'),
+          nextArrow: $('.team-arrows__item_r_t'),
+        });
+      }
+      else{
+        $(".services-row").slick('unslick');
+      }
+    });
+
+
+
+  if ($(window).width() < 1200) {
+    $('.team-slider').slick({
+        slidesToShow: 1,
+        dots: true,
+        slidesToScroll: 1,
+        arrows: true,
+        prevArrow: $('.team-arrows__item_l'),
+        nextArrow: $('.team-arrows__item_r'),
+    })
+  }
+  else{
+    $('.team-slider').slick('unslick');
+  }
+  $(window).on('resize', function() {
+      if ($(window).width() < 1200) {
+        $('.team-slider').slick({
+            slidesToShow: 1,
+            dots: true,
+            slidesToScroll: 1,
+            arrows: true,
+            prevArrow: $('.team-arrows__item_l'),
+            nextArrow: $('.team-arrows__item_r'),
+        })
+      }
+      else{
+        $('.team-slider').slick('unslick');
+      }
+  });
   $('.works-slider-mobile').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
